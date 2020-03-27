@@ -1,11 +1,11 @@
 #!/bin/bash
 #Suggest deploying to us-east-1 due to CE API, and SES
-export AWS_DEFAULT_REGION=us-east-1 
+export AWS_DEFAULT_REGION=us-east-2 
 #Change the below, an s3 bucket to store lambda code for deploy, and output report
 #Must be in same region as lambda (ie AWS_DEFAULT_REGION)
-export BUCKET=changeme
+export BUCKET=armory-supportdev-billing
 #Comma Seperated list of emails to send to
-export SES_TO=email@test.com,email2@test.com
+export SES_TO=kinnon.yee@armory.io
 export SES_FROM=email@test.com
 export SES_REGION=us-east-1
 #Comma Seperated list of Cost Allocation Tags (must be configured in AWS billing prefs)
